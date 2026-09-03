@@ -1,11 +1,13 @@
-function Navibar() {
+function 
+
+Navibar() {
     return (
         <div>
-            <div className="flex items-center justify-between px-10 bg-green-800 h-[50px]" >
+            <div className="flex items-center justify-between px-10 bg-green-800 h-[50px]  fixed"  >
 
                 <h1 className="text-orange-600 font-bold">BENS</h1>
 
-                <nav className="flex gap-6 text-white">
+                <nav className="flex gap-6 text-white pl-[1006px]">
                     <a href="#" className="text-orange-600">Home</a>
                     <a href="#">About</a>
                     <a href="#">Shop</a>
