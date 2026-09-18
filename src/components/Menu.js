@@ -3,7 +3,7 @@ import Menuimg1 from '../assets/Food.jpg'
 import Menuimg2 from '../assets/Drinks.png'
 import { useNavigate } from 'react-router-dom'
 
-function Menu (){
+function Menu ({coin}){
     return(
         <div className=' bg-green-900 mt-[10px] h-[450px]'>
             <div className="max-w-[900px] ml-[300px]">
@@ -35,7 +35,18 @@ function Menu (){
 
                 </div>
     </div>
-           
+
+              <div>
+                {
+            coin.map((pro ,i) =>{
+                return(
+                    <div>
+                        <p>{pro[0].size}</p>
+                    </div>
+                )
+            })
+                }
+              </div>
 
         </div>
     )

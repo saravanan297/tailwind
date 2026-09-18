@@ -1,9 +1,11 @@
 import { Link } from "react-router-dom";
 import bgimag from '../assets/coffeeee.avif'
 
-function Login() {
+function Login({coffee}) {
     return (
-       <div id="btn" className="pl-[600px]">
+       <div id="btn" className="pl-[600px] pt-9">
+            
+
         
                 <p className="text-[70px] pl-[80px] pt-[0px]">☕</p>
                 <h1 className="text-[30px] font-bold pl-5 text-yellow-300 ">Coffee House</h1>
@@ -38,6 +40,11 @@ function Login() {
                 <h5 className="font-bold pl-2  text-blue-500">Sign Up</h5>
             </div>
             
+
+            {/* <p>{coffee.name}</p>
+            <p>{coffee.rate}</p>
+            <p>{coffee.place}</p> */}
+
                    </div>
                   
     );

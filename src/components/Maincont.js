@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import mainimg from '../assets/coffeeee.avif'
 import mainimg1 from '../assets/green img.webp'
 
-function Maincont() {
+function Maincont({coffee}) {
     return (
         <div>
             <div className="flex">
@@ -28,6 +28,7 @@ function Maincont() {
                 </div>
 
             </div>
+            <p>{coffee.place}</p>
         </div>
     )
 }
